@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BookScope — sales estimates on every Amazon book result</title>
+<meta name="description" content="Chrome extension for KDP research. See estimated sales per day and revenue per month under every book on Amazon search and category pages.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEF1F4; --ink:#16202A; --muted:#5B6673; --rule:#CFD6DD;
+    --teal:#0F766E; --hi:#FFE566; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  html{background:var(--paper);color:var(--ink)}
+  body{margin:0;font:16px/1.55 "Public Sans",system-ui,sans-serif}
+  a{color:inherit}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{padding:28px 0 8px}
+  .brand{font:600 22px "Newsreader",Georgia,serif;text-decoration:none;letter-spacing:-.01em}
+  h1{font:500 clamp(34px,6vw,54px)/1.05 "Newsreader",Georgia,serif;letter-spacing:-.02em;margin:40px 0 16px;max-width:15ch}
+  .lede{font-size:19px;color:var(--muted);max-width:44ch;margin:0 0 36px}
+  .cta{display:inline-block;background:var(--ink);color:var(--white);text-decoration:none;padding:13px 20px;border-radius:6px;font-weight:600}
+  .cta:focus-visible,a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+  .cta-note{display:block;margin-top:10px;color:var(--muted);font-size:14px}
+
+  /* The demo: an Amazon-like result with our strip injected */
+  .demo{margin:56px 0 0;background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 18px 14px}
+  .demo-label{font-size:13px;color:var(--muted);margin:0 0 14px}
+  .result{display:grid;grid-template-columns:72px 1fr;gap:16px}
+  .cover{width:72px;height:108px;background:linear-gradient(160deg,#2B3A4A,#16202A);border-radius:2px;position:relative}
+  .cover::after{content:"";position:absolute;left:8px;right:8px;top:14px;height:6px;background:rgba(255,255,255,.35);border-radius:1px;box-shadow:0 12px 0 rgba(255,255,255,.35),0 24px 0 rgba(255,255,255,.2)}
+  .r-title{font-size:17px;font-weight:500;margin:0 0 2px}
+  .r-meta{font-size:14px;color:var(--muted);margin:0}
+  .r-price{font-size:15px;margin:6px 0 0}
+  .strip{grid-column:1/-1;margin-top:12px;border-top:2px solid var(--teal);padding-top:10px;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:14px}
+  .strip b{font-weight:600}
+  .strip .k{color:var(--muted)}
+  .strip mark{background:var(--hi);padding:0 4px;border-radius:2px;font-weight:600}
+  .verdict{margin:14px -18px -14px;padding:12px 18px;background:#E6F4F1;border-radius:0 0 8px 8px;font-size:14px}
+  .verdict b{color:var(--teal)}
+
+  h2{font:500 30px/1.15 "Newsreader",Georgia,serif;letter-spacing:-.015em;margin:64px 0 18px}
+  .facts{display:grid;gap:22px;padding:0;margin:0;list-style:none}
+  .facts li{max-width:60ch}
+  .facts strong{display:block;font-weight:600;margin-bottom:3px}
+
+  .price{margin:64px 0 0;padding:28px 0 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+  .price-num{font:500 44px/1 "Newsreader",Georgia,serif}
+  .price p{margin:8px 0 0;color:var(--muted);max-width:40ch}
+  @media (max-width:560px){.price{grid-template-columns:1fr}}
+
+  footer{margin:72px 0 40px;padding-top:20px;border-top:1px solid var(--rule);font-size:14px;color:var(--muted)}
+  footer p{margin:6px 0}
+  @media (prefers-reduced-motion:no-preference){
+    .strip{animation:reveal .5s ease-out both;animation-delay:.25s}
+    @keyframes reveal{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a class="brand" href="/">BookScope</a></header>
+
+  <main>
+    <h1>Know what a book earns before you write yours.</h1>
+    <p class="lede">BookScope is a Chrome extension that puts estimated sales and monthly revenue under every book on Amazon, so KDP niche research takes minutes instead of an afternoon of tab-hopping.</p>
+
+    <a class="cta" href="#store">Add to Chrome</a>
+    <span class="cta-note">Free for the first 5 results on every page. Coming to the Chrome Web Store shortly.</span>
+
+    <section class="demo" aria-label="What BookScope adds to an Amazon result">
+      <p class="demo-label">An Amazon search result, with BookScope installed:</p>
+      <article class="result">
+        <div class="cover" aria-hidden="true"></div>
+        <div>
+          <p class="r-title">Sourdough for Busy People: 40 no-knead loaves</p>
+          <p class="r-meta">by M. Halvorsen · Kindle Edition · 4.6 ★ (412) · Published Feb 2026</p>
+          <p class="r-price">$6.99</p>
+        </div>
+        <div class="strip">
+          <span><span class="k">BSR</span> <b>#8,240</b> in Kindle Store</span>
+          <span><span class="k">Est. sales</span> <mark>~9 / day</mark></span>
+          <span><span class="k">Est. revenue</span> <mark>~$1,320 / mo</mark></span>
+          <span><span class="k">Publisher</span> <b>Indie</b></span>
+          <span><span class="k">Pages</span> <b>164</b></span>
+        </div>
+      </article>
+      <div class="verdict">Page summary · 16 results · median <b>$640 / mo</b> · avg 210 reviews · 69% indie · <b>Opportunity: High</b></div>
+    </section>
+
+    <h2>What it does</h2>
+    <ul class="facts">
+      <li><strong>Reads the rank, does the math</strong>Best Sellers Rank, price, reviews and format are already on the page. BookScope turns them into sales per day and revenue per month using a published BSR-to-sales curve and Amazon's royalty rates.</li>
+      <li><strong>Sizes up the whole niche</strong>A summary bar at the top of each search or category page shows median revenue, average review count and how many titles are independently published, with a plain High / Medium / Low verdict.</li>
+      <li><strong>Works where you already look</strong>Amazon .com, .co.uk, .ca, .com.au, .de and .in. Kindle and print. No dashboard to log into, nothing leaves your browser except the Amazon pages you're already viewing.</li>
+    </ul>
+
+    <section class="price" id="store" aria-label="Pricing">
+      <div>
+        <div class="price-num">$50</div>
+        <p>One-time payment. Unlimited results on every page, all supported stores, updates included. No subscription.</p>
+      </div>
+      <a class="cta" href="#store">Add to Chrome</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Estimates are derived from public ranking data and are indicative, not actual sales figures.</p>
+    <p>Refunds within 14 days of purchase if the extension doesn't work for you. Support: <a href="mailto:lmntrixaceog@gmail.com">lmntrixaceog@gmail.com</a></p>
+    <p>BookScope is not affiliated with or endorsed by Amazon. Amazon and Kindle are trademarks of Amazon.com, Inc.</p>
+  </footer>
+</div>
+</body>
+</html>
