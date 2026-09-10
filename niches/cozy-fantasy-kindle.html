@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEF1F4; --ink:#16202A; --muted:#5B6673; --rule:#CFD6DD;
+    --teal:#0F766E; --hi:#FFE566; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  html{background:var(--paper);color:var(--ink)}
+  body{margin:0;font:16px/1.55 "Public Sans",system-ui,sans-serif}
+  a{color:inherit}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{padding:28px 0 8px}
+  .brand{font:600 22px "Newsreader",Georgia,serif;text-decoration:none;letter-spacing:-.01em}
+  h1{font:500 clamp(34px,6vw,54px)/1.05 "Newsreader",Georgia,serif;letter-spacing:-.02em;margin:40px 0 16px;max-width:15ch}
+  .lede{font-size:19px;color:var(--muted);max-width:44ch;margin:0 0 36px}
+  .cta{display:inline-block;background:var(--ink);color:var(--white);text-decoration:none;padding:13px 20px;border-radius:6px;font-weight:600}
+  .cta:focus-visible,a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+  .cta-note{display:block;margin-top:10px;color:var(--muted);font-size:14px}
+
+  /* The demo: an Amazon-like result with our strip injected */
+  .demo{margin:56px 0 0;background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 18px 14px}
+  .demo-label{font-size:13px;color:var(--muted);margin:0 0 14px}
+  .result{display:grid;grid-template-columns:72px 1fr;gap:16px}
+  .cover{width:72px;height:108px;background:linear-gradient(160deg,#2B3A4A,#16202A);border-radius:2px;position:relative}
+  .cover::after{content:"";position:absolute;left:8px;right:8px;top:14px;height:6px;background:rgba(255,255,255,.35);border-radius:1px;box-shadow:0 12px 0 rgba(255,255,255,.35),0 24px 0 rgba(255,255,255,.2)}
+  .r-title{font-size:17px;font-weight:500;margin:0 0 2px}
+  .r-meta{font-size:14px;color:var(--muted);margin:0}
+  .r-price{font-size:15px;margin:6px 0 0}
+  .strip{grid-column:1/-1;margin-top:12px;border-top:2px solid var(--teal);padding-top:10px;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:14px}
+  .strip b{font-weight:600}
+  .strip .k{color:var(--muted)}
+  .strip mark{background:var(--hi);padding:0 4px;border-radius:2px;font-weight:600}
+  .verdict{margin:14px -18px -14px;padding:12px 18px;background:#E6F4F1;border-radius:0 0 8px 8px;font-size:14px}
+  .verdict b{color:var(--teal)}
+
+  h2{font:500 30px/1.15 "Newsreader",Georgia,serif;letter-spacing:-.015em;margin:64px 0 18px}
+  .facts{display:grid;gap:22px;padding:0;margin:0;list-style:none}
+  .facts li{max-width:60ch}
+  .facts strong{display:block;font-weight:600;margin-bottom:3px}
+
+  .price{margin:64px 0 0;padding:28px 0 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+  .price-num{font:500 44px/1 "Newsreader",Georgia,serif}
+  .price p{margin:8px 0 0;color:var(--muted);max-width:40ch}
+  @media (max-width:560px){.price{grid-template-columns:1fr}}
+
+  footer{margin:72px 0 40px;padding-top:20px;border-top:1px solid var(--rule);font-size:14px;color:var(--muted)}
+  footer p{margin:6px 0}
+  @media (prefers-reduced-motion:no-preference){
+    .strip{animation:reveal .5s ease-out both;animation-delay:.25s}
+    @keyframes reveal{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  }
+</style>
+<style>
+  h2{font:500 26px/1.2 "Newsreader",Georgia,serif;letter-spacing:-.01em;margin:36px 0 10px}
+  p,li{max-width:62ch}
+  ul{padding-left:20px}
+  .updated{color:var(--muted);font-size:14px}
+  footer{margin:56px 0 40px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<title>Is &quot;cozy fantasy&quot; profitable on Amazon KDP? (September 2026 data)</title>
+<meta name="description" content="Kindle Store search for &quot;cozy fantasy&quot;: median $816/mo, 41,236 reviews on average, 47% indie. Verdict: Medium.">
+<link rel="canonical" href="https://bookscope.github.io/niches/cozy-fantasy-kindle.html">
+<meta property="og:title" content="Is &quot;cozy fantasy&quot; profitable on Amazon KDP? (September 2026 data)"><meta property="og:description" content="Kindle Store search for &quot;cozy fantasy&quot;: median $816/mo, 41,236 reviews on average, 47% indie. Verdict: Medium."><meta property="og:type" content="article">
+<style>
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+  .kpi{border:1px solid #d9e3e2;border-radius:10px;padding:12px 14px;background:#fff}
+  .kpi b{display:block;font-size:22px;font-family:"Newsreader",Georgia,serif}
+  .kpi span{font-size:12px;color:#5b6b6a;text-transform:uppercase;letter-spacing:.4px}
+  .verdict{display:inline-block;padding:4px 12px;border-radius:999px;font-weight:600;font-size:13px;margin-right:10px}
+  .verdict.High{background:#e3f4e6;color:#14632a}.verdict.Medium{background:#fdf3d8;color:#7a5200}.verdict.Low,.verdict.None{background:#eceff1;color:#3f4a54}
+  .shot{margin:22px 0}.shot img{width:100%;height:auto;border:1px solid #d9e3e2;border-radius:10px}
+  .cta{display:inline-block;background:#0F766E;color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .card{border:1px solid #d9e3e2;border-radius:10px;padding:14px;background:#fff}
+  .card a{font-weight:600;text-decoration:none;color:#0F766E}
+  .muted{color:#5b6b6a;font-size:13px}
+  table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:6px 8px;border-bottom:1px solid #e6eceb;text-align:left}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a class="brand" href="../index.html">BookScope</a> · <a href="index.html">Niche reports</a></header>
+  
+  <h1>Is "cozy fantasy" profitable on KDP?</h1>
+  <p class="lede">What the top Amazon Kindle Store results for <em>cozy fantasy</em> are estimated to earn, measured with BookScope on September 2026.</p>
+  <p><span class="verdict Medium">Medium</span> <span class="muted">16 results on the first page, 15 with a Best Sellers Rank</span></p>
+  <div class="kpis"><div class="kpi"><b>$816</b><span>Median revenue / month</span></div><div class="kpi"><b>$4,428</b><span>Average revenue / month</span></div><div class="kpi"><b>41,236</b><span>Average reviews</span></div><div class="kpi"><b>47%</b><span>Independently published</span></div><div class="kpi"><b>3.1 yrs · 47% new</b><span>Niche age</span></div></div>
+  <h2>Why Medium</h2>
+  <ul><li>Money is here — median $816/mo.</li><li>Entrenched: 41,236 reviews on average.</li><li>Over 40,000 results — a real category.</li><li>Hot: 47% of these books came out in the last year.</li></ul>
+  <figure class="shot"><img src="img/cozy-fantasy-kindle.png" alt="Amazon search results for cozy fantasy with BookScope's estimates under each book" loading="lazy" width="1280" height="800"></figure>
+  <h2>Top results at a glance</h2><table><tr><th>#</th><th>Best Sellers Rank</th><th>Format</th><th>Pages</th></tr><tr><td>1</td><td>#35,761</td><td>Kindle</td><td>314</td></tr><tr><td>2</td><td>#513</td><td>Kindle</td><td>334</td></tr><tr><td>3</td><td>#9,200</td><td>Kindle</td><td>313</td></tr><tr><td>4</td><td>#64,980</td><td>Kindle</td><td>220</td></tr><tr><td>5</td><td>#291,516</td><td>Kindle</td><td>310</td></tr><tr><td>6</td><td>#7,437</td><td>Kindle</td><td>391</td></tr><tr><td>7</td><td>#1,482</td><td>Kindle</td><td>444</td></tr><tr><td>8</td><td>#1,011</td><td>Kindle</td><td>298</td></tr><tr><td>9</td><td>#54</td><td>Kindle</td><td>441</td></tr><tr><td>10</td><td>#241,693</td><td>Kindle</td><td>205</td></tr><tr><td>11</td><td>#33,166</td><td>Kindle</td><td>290</td></tr><tr><td>12</td><td>#149</td><td>Kindle</td><td>368</td></tr></table>
+  <h2>Get these numbers for any search</h2>
+  <p>BookScope is a Chrome extension that puts this under every book on Amazon search and Best Sellers pages — six stores, Kindle and print, KDP's real royalty terms. The first 5 results on every page are free.</p>
+  <p><a class="cta" href="https://chromewebstore.google.com/detail/hodbjjaohnolmgbickjoiagcphcllcbo">Add BookScope to Chrome — free</a></p>
+  <p class="muted">Search checked: <a href="https://www.amazon.com/s?k=cozy+fantasy&amp;i=digital-text" rel="nofollow">https://www.amazon.com/s?k=cozy+fantasy&amp;i=digital-text</a> · 2026-09-10</p>
+  <footer>Estimates come from public Best Sellers Rank data via a published rank-to-sales curve and KDP's published royalty terms; they are indicative, not Amazon sales figures. BookScope is not affiliated with Amazon.</footer>
+</div>
+</body>
+</html>

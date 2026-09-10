@@ -1,0 +1,903 @@
+{
+  "cozy-mystery-kindle": {
+    "id": "cozy-mystery-kindle",
+    "keyword": "cozy mystery",
+    "store": "digital-text",
+    "storeLabel": "Kindle Store",
+    "url": "https://www.amazon.com/s?k=cozy+mystery&i=digital-text",
+    "date": "2026-09-10",
+    "dateLabel": "September 2026",
+    "stats": {
+      "Analysed": "15 of 16 · scroll for more",
+      "Avg rev/mo": "$4,013",
+      "Median rev/mo": "$3,498",
+      "Avg reviews": "13,827",
+      "Indie": "27%",
+      "Niche age": "1.3 yrs · 67% new"
+    },
+    "verdict": "Medium",
+    "reasons": [
+      "Money is here — median $3,498/mo.",
+      "Entrenched: 13,827 reviews on average.",
+      "Crowded: over 50,000 results.",
+      "Hot: 67% of these books came out in the last year."
+    ],
+    "analysed": 16,
+    "withBsr": 15,
+    "books": [
+      {
+        "bsr": 2100,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 445
+      },
+      {
+        "bsr": 2595,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 331
+      },
+      {
+        "bsr": 1649,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 318
+      },
+      {
+        "bsr": 149,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 368
+      },
+      {
+        "bsr": 2698,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 277
+      },
+      {
+        "bsr": 3588,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 345
+      },
+      {
+        "bsr": 2593,
+        "price": 381.42,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 392
+      },
+      {
+        "bsr": 4115,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 189
+      },
+      {
+        "bsr": 2273,
+        "price": 954.97,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 2069
+      },
+      {
+        "bsr": 3837,
+        "price": 668.2,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 295
+      },
+      {
+        "bsr": 2155,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 316
+      },
+      {
+        "bsr": 4870,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 320
+      }
+    ],
+    "img": "img/cozy-mystery-kindle.png"
+  },
+  "keto-cookbook-for-beginners-books": {
+    "id": "keto-cookbook-for-beginners-books",
+    "keyword": "keto cookbook for beginners",
+    "store": "stripbooks",
+    "storeLabel": "Books",
+    "url": "https://www.amazon.com/s?k=keto+cookbook+for+beginners&i=stripbooks",
+    "date": "2026-09-10",
+    "dateLabel": "September 2026",
+    "stats": {
+      "Analysed": "8 of 24 · scroll for more",
+      "Avg rev/mo": "$257",
+      "Median rev/mo": "$173",
+      "Avg reviews": "5,866",
+      "Indie": "75%",
+      "Niche age": "3.6 yrs · 13% new"
+    },
+    "verdict": "Low",
+    "reasons": [
+      "Thin — median $173/mo.",
+      "Entrenched: 5,866 reviews on average.",
+      "Over 20,000 results — a real category."
+    ],
+    "analysed": 24,
+    "withBsr": 8,
+    "books": [
+      {
+        "bsr": 23636,
+        "price": 1811.49,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 92
+      },
+      {
+        "bsr": 63553,
+        "price": 1582.06,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 95
+      },
+      {
+        "bsr": 510188,
+        "price": 1233.15,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 190
+      },
+      {
+        "bsr": 13756,
+        "price": 1371.76,
+        "currency": "INR",
+        "format": "Hardcover",
+        "pages": 256
+      },
+      {
+        "bsr": 567983,
+        "price": 1624.13,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 124
+      },
+      {
+        "bsr": 85008,
+        "price": 1910.9,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 76
+      },
+      {
+        "bsr": 33883,
+        "price": 2197.68,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 82
+      },
+      {
+        "bsr": 41851,
+        "price": 587.9,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 158
+      },
+      {
+        "bsr": null,
+        "price": 2102.09,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": null
+      },
+      {
+        "bsr": null,
+        "price": null,
+        "currency": "USD",
+        "format": "Paperback",
+        "pages": null
+      },
+      {
+        "bsr": null,
+        "price": 1337.35,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": null
+      },
+      {
+        "bsr": null,
+        "price": 1576.33,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": null
+      }
+    ],
+    "img": "img/keto-cookbook-for-beginners-books.png"
+  },
+  "dinosaur-coloring-book-for-kids-books": {
+    "id": "dinosaur-coloring-book-for-kids-books",
+    "keyword": "dinosaur coloring book for kids",
+    "store": "stripbooks",
+    "storeLabel": "Books",
+    "url": "https://www.amazon.com/s?k=dinosaur+coloring+book+for+kids&i=stripbooks",
+    "date": "2026-09-10",
+    "dateLabel": "September 2026",
+    "stats": {
+      "Analysed": "8 of 24 · scroll for more",
+      "Avg rev/mo": "$198",
+      "Median rev/mo": "$187",
+      "Avg reviews": "806",
+      "Indie": "50%",
+      "Niche age": "5.8 yrs · 25% new"
+    },
+    "verdict": "Low",
+    "reasons": [
+      "Thin — median $187/mo.",
+      "Established competitors: 806 reviews on average.",
+      "Crowded: over 50,000 results.",
+      "Stale shelf: books average 5.8 years old — room for something fresh."
+    ],
+    "analysed": 24,
+    "withBsr": 8,
+    "books": [
+      {
+        "bsr": 5873,
+        "price": 622.31,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 128
+      },
+      {
+        "bsr": 3753,
+        "price": 620.4,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 102
+      },
+      {
+        "bsr": 16135,
+        "price": 859.38,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 112
+      },
+      {
+        "bsr": 491501,
+        "price": 1241.75,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 207
+      },
+      {
+        "bsr": 168071,
+        "price": 668.2,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 105
+      },
+      {
+        "bsr": 7283,
+        "price": 130.01,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 32
+      },
+      {
+        "bsr": 73883,
+        "price": 954.97,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 100
+      },
+      {
+        "bsr": 19779,
+        "price": 954.97,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": 104
+      },
+      {
+        "bsr": null,
+        "price": 735.11,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": null
+      },
+      {
+        "bsr": null,
+        "price": 954.97,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": null
+      },
+      {
+        "bsr": null,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": null
+      },
+      {
+        "bsr": null,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Paperback",
+        "pages": null
+      }
+    ],
+    "img": "img/dinosaur-coloring-book-for-kids-books.png"
+  },
+  "witchy-romance-kindle": {
+    "id": "witchy-romance-kindle",
+    "keyword": "witchy romance",
+    "store": "digital-text",
+    "storeLabel": "Kindle Store",
+    "url": "https://www.amazon.com/s?k=witchy+romance&i=digital-text",
+    "date": "2026-09-10",
+    "dateLabel": "September 2026",
+    "stats": {
+      "Analysed": "15 of 16 · scroll for more",
+      "Avg rev/mo": "$713",
+      "Median rev/mo": "$175",
+      "Avg reviews": "7,978",
+      "Indie": "47%",
+      "Niche age": "3.2 yrs · 27% new"
+    },
+    "verdict": "Low",
+    "reasons": [
+      "Thin — median $175/mo.",
+      "Entrenched: 7,978 reviews on average.",
+      "Only 4,000 results — a small niche."
+    ],
+    "analysed": 16,
+    "withBsr": 15,
+    "books": [
+      {
+        "bsr": 5040,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 395
+      },
+      {
+        "bsr": 9771,
+        "price": 1241.75,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 382
+      },
+      {
+        "bsr": 7324,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 376
+      },
+      {
+        "bsr": 13961,
+        "price": 381.42,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 246
+      },
+      {
+        "bsr": 64554,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 276
+      },
+      {
+        "bsr": 648193,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 216
+      },
+      {
+        "bsr": 37532,
+        "price": 668.2,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 472
+      },
+      {
+        "bsr": 32620,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 142
+      },
+      {
+        "bsr": 11179,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 282
+      },
+      {
+        "bsr": 121667,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 328
+      },
+      {
+        "bsr": 11988,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 282
+      },
+      {
+        "bsr": 16118,
+        "price": 238.03,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 269
+      }
+    ],
+    "img": "img/witchy-romance-kindle.png"
+  },
+  "small-town-romance-kindle": {
+    "id": "small-town-romance-kindle",
+    "keyword": "small town romance",
+    "store": "digital-text",
+    "storeLabel": "Kindle Store",
+    "url": "https://www.amazon.com/s?k=small+town+romance&i=digital-text",
+    "date": "2026-09-10",
+    "dateLabel": "September 2026",
+    "stats": {
+      "Analysed": "14 of 16 · scroll for more",
+      "Avg rev/mo": "$6,081",
+      "Median rev/mo": "$1,921",
+      "Avg reviews": "17,208",
+      "Indie": "50%",
+      "Niche age": "1.8 yrs · 36% new"
+    },
+    "verdict": "Medium",
+    "reasons": [
+      "Money is here — median $1,921/mo.",
+      "Entrenched: 17,208 reviews on average.",
+      "Crowded: over 60,000 results."
+    ],
+    "analysed": 16,
+    "withBsr": 14,
+    "books": [
+      {
+        "bsr": 399,
+        "price": 381.42,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 344
+      },
+      {
+        "bsr": 5184,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 270
+      },
+      {
+        "bsr": 3184,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 316
+      },
+      {
+        "bsr": 1413,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 432
+      },
+      {
+        "bsr": 7653,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 434
+      },
+      {
+        "bsr": 875,
+        "price": 1337.35,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 305
+      },
+      {
+        "bsr": 6148,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 351
+      },
+      {
+        "bsr": 12536,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 434
+      },
+      {
+        "bsr": 88812,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 298
+      },
+      {
+        "bsr": 37809,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 232
+      },
+      {
+        "bsr": 86,
+        "price": 381.42,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 319
+      },
+      {
+        "bsr": 788207,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 258
+      }
+    ],
+    "img": "img/small-town-romance-kindle.png"
+  },
+  "enemies-to-lovers-romance-kindle": {
+    "id": "enemies-to-lovers-romance-kindle",
+    "keyword": "enemies to lovers romance",
+    "store": "digital-text",
+    "storeLabel": "Kindle Store",
+    "url": "https://www.amazon.com/s?k=enemies+to+lovers+romance&i=digital-text",
+    "date": "2026-09-10",
+    "dateLabel": "September 2026",
+    "stats": {
+      "Analysed": "15 of 16 · scroll for more",
+      "Avg rev/mo": "$5,023",
+      "Median rev/mo": "$2,520",
+      "Avg reviews": "26,515",
+      "Indie": "40%",
+      "Niche age": "2.6 yrs · 40% new"
+    },
+    "verdict": "Medium",
+    "reasons": [
+      "Money is here — median $2,520/mo.",
+      "Entrenched: 26,515 reviews on average.",
+      "Crowded: over 60,000 results.",
+      "Hot: 40% of these books came out in the last year."
+    ],
+    "analysed": 16,
+    "withBsr": 15,
+    "books": [
+      {
+        "bsr": 4229,
+        "price": 381.42,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 288
+      },
+      {
+        "bsr": 76,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 542
+      },
+      {
+        "bsr": 657,
+        "price": 1624.13,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 512
+      },
+      {
+        "bsr": 11922,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 434
+      },
+      {
+        "bsr": 1466,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 352
+      },
+      {
+        "bsr": 818,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 432
+      },
+      {
+        "bsr": 435,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 368
+      },
+      {
+        "bsr": 5315,
+        "price": 1432.94,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 408
+      },
+      {
+        "bsr": 36117,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 360
+      },
+      {
+        "bsr": 56166,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 262
+      },
+      {
+        "bsr": 11614,
+        "price": 381.42,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 522
+      },
+      {
+        "bsr": 15655,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 614
+      }
+    ],
+    "img": "img/enemies-to-lovers-romance-kindle.png"
+  },
+  "cozy-fantasy-kindle": {
+    "id": "cozy-fantasy-kindle",
+    "keyword": "cozy fantasy",
+    "store": "digital-text",
+    "storeLabel": "Kindle Store",
+    "url": "https://www.amazon.com/s?k=cozy+fantasy&i=digital-text",
+    "date": "2026-09-10",
+    "dateLabel": "September 2026",
+    "stats": {
+      "Analysed": "15 of 16 · scroll for more",
+      "Avg rev/mo": "$4,428",
+      "Median rev/mo": "$816",
+      "Avg reviews": "41,236",
+      "Indie": "47%",
+      "Niche age": "3.1 yrs · 47% new"
+    },
+    "verdict": "Medium",
+    "reasons": [
+      "Money is here — median $816/mo.",
+      "Entrenched: 41,236 reviews on average.",
+      "Over 40,000 results — a real category.",
+      "Hot: 47% of these books came out in the last year."
+    ],
+    "analysed": 16,
+    "withBsr": 15,
+    "books": [
+      {
+        "bsr": 35761,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 314
+      },
+      {
+        "bsr": 513,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 334
+      },
+      {
+        "bsr": 9200,
+        "price": 381.42,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 313
+      },
+      {
+        "bsr": 64980,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 220
+      },
+      {
+        "bsr": 291516,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 310
+      },
+      {
+        "bsr": 7437,
+        "price": 1241.75,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 391
+      },
+      {
+        "bsr": 1482,
+        "price": 1241.75,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 444
+      },
+      {
+        "bsr": 1011,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 298
+      },
+      {
+        "bsr": 54,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 441
+      },
+      {
+        "bsr": 241693,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 205
+      },
+      {
+        "bsr": 33166,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 290
+      },
+      {
+        "bsr": 149,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 368
+      }
+    ],
+    "img": "img/cozy-fantasy-kindle.png"
+  },
+  "space-opera-kindle": {
+    "id": "space-opera-kindle",
+    "keyword": "space opera",
+    "store": "digital-text",
+    "storeLabel": "Kindle Store",
+    "url": "https://www.amazon.com/s?k=space+opera&i=digital-text",
+    "date": "2026-09-10",
+    "dateLabel": "September 2026",
+    "stats": {
+      "Analysed": "16 of 16",
+      "Avg rev/mo": "$2,485",
+      "Median rev/mo": "$2,471",
+      "Avg reviews": "2,544",
+      "Indie": "63%",
+      "Niche age": "0.8 yrs · 88% new"
+    },
+    "verdict": "Medium",
+    "reasons": [
+      "Money is here — median $2,471/mo.",
+      "Entrenched: 2,544 reviews on average.",
+      "Crowded: over 50,000 results.",
+      "Hot: 88% of these books came out in the last year."
+    ],
+    "analysed": 16,
+    "withBsr": 16,
+    "books": [
+      {
+        "bsr": 4962,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 619
+      },
+      {
+        "bsr": 3548,
+        "price": 954.97,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 321
+      },
+      {
+        "bsr": 490,
+        "price": 94.64,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 470
+      },
+      {
+        "bsr": 1960,
+        "price": 381.42,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 256
+      },
+      {
+        "bsr": 1086,
+        "price": 285.82,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 301
+      },
+      {
+        "bsr": 6326,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 484
+      },
+      {
+        "bsr": 2867,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 373
+      },
+      {
+        "bsr": 2797,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 277
+      },
+      {
+        "bsr": 1803,
+        "price": 381.42,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 312
+      },
+      {
+        "bsr": 6519,
+        "price": 763.79,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 331
+      },
+      {
+        "bsr": 1397,
+        "price": 477.01,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 283
+      },
+      {
+        "bsr": 12135,
+        "price": 572.6,
+        "currency": "INR",
+        "format": "Kindle",
+        "pages": 394
+      }
+    ],
+    "img": "img/space-opera-kindle.png"
+  }
+}

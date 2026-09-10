@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bookscope.github.io/sitemap.xml

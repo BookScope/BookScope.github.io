@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEF1F4; --ink:#16202A; --muted:#5B6673; --rule:#CFD6DD;
+    --teal:#0F766E; --hi:#FFE566; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  html{background:var(--paper);color:var(--ink)}
+  body{margin:0;font:16px/1.55 "Public Sans",system-ui,sans-serif}
+  a{color:inherit}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{padding:28px 0 8px}
+  .brand{font:600 22px "Newsreader",Georgia,serif;text-decoration:none;letter-spacing:-.01em}
+  h1{font:500 clamp(34px,6vw,54px)/1.05 "Newsreader",Georgia,serif;letter-spacing:-.02em;margin:40px 0 16px;max-width:15ch}
+  .lede{font-size:19px;color:var(--muted);max-width:44ch;margin:0 0 36px}
+  .cta{display:inline-block;background:var(--ink);color:var(--white);text-decoration:none;padding:13px 20px;border-radius:6px;font-weight:600}
+  .cta:focus-visible,a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+  .cta-note{display:block;margin-top:10px;color:var(--muted);font-size:14px}
+
+  /* The demo: an Amazon-like result with our strip injected */
+  .demo{margin:56px 0 0;background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 18px 14px}
+  .demo-label{font-size:13px;color:var(--muted);margin:0 0 14px}
+  .result{display:grid;grid-template-columns:72px 1fr;gap:16px}
+  .cover{width:72px;height:108px;background:linear-gradient(160deg,#2B3A4A,#16202A);border-radius:2px;position:relative}
+  .cover::after{content:"";position:absolute;left:8px;right:8px;top:14px;height:6px;background:rgba(255,255,255,.35);border-radius:1px;box-shadow:0 12px 0 rgba(255,255,255,.35),0 24px 0 rgba(255,255,255,.2)}
+  .r-title{font-size:17px;font-weight:500;margin:0 0 2px}
+  .r-meta{font-size:14px;color:var(--muted);margin:0}
+  .r-price{font-size:15px;margin:6px 0 0}
+  .strip{grid-column:1/-1;margin-top:12px;border-top:2px solid var(--teal);padding-top:10px;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:14px}
+  .strip b{font-weight:600}
+  .strip .k{color:var(--muted)}
+  .strip mark{background:var(--hi);padding:0 4px;border-radius:2px;font-weight:600}
+  .verdict{margin:14px -18px -14px;padding:12px 18px;background:#E6F4F1;border-radius:0 0 8px 8px;font-size:14px}
+  .verdict b{color:var(--teal)}
+
+  h2{font:500 30px/1.15 "Newsreader",Georgia,serif;letter-spacing:-.015em;margin:64px 0 18px}
+  .facts{display:grid;gap:22px;padding:0;margin:0;list-style:none}
+  .facts li{max-width:60ch}
+  .facts strong{display:block;font-weight:600;margin-bottom:3px}
+
+  .price{margin:64px 0 0;padding:28px 0 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+  .price-num{font:500 44px/1 "Newsreader",Georgia,serif}
+  .price p{margin:8px 0 0;color:var(--muted);max-width:40ch}
+  @media (max-width:560px){.price{grid-template-columns:1fr}}
+
+  footer{margin:72px 0 40px;padding-top:20px;border-top:1px solid var(--rule);font-size:14px;color:var(--muted)}
+  footer p{margin:6px 0}
+  @media (prefers-reduced-motion:no-preference){
+    .strip{animation:reveal .5s ease-out both;animation-delay:.25s}
+    @keyframes reveal{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  }
+</style>
+<style>
+  h2{font:500 26px/1.2 "Newsreader",Georgia,serif;letter-spacing:-.01em;margin:36px 0 10px}
+  p,li{max-width:62ch}
+  ul{padding-left:20px}
+  .updated{color:var(--muted);font-size:14px}
+  footer{margin:56px 0 40px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<title>KDP niche reports — is your niche profitable on Amazon?</title>
+<meta name="description" content="Monthly data on what Amazon book niches earn, measured with BookScope.">
+<link rel="canonical" href="https://bookscope.github.io/niches/index.html">
+<meta property="og:title" content="KDP niche reports — is your niche profitable on Amazon?"><meta property="og:description" content="Monthly data on what Amazon book niches earn, measured with BookScope."><meta property="og:type" content="article">
+<style>
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+  .kpi{border:1px solid #d9e3e2;border-radius:10px;padding:12px 14px;background:#fff}
+  .kpi b{display:block;font-size:22px;font-family:"Newsreader",Georgia,serif}
+  .kpi span{font-size:12px;color:#5b6b6a;text-transform:uppercase;letter-spacing:.4px}
+  .verdict{display:inline-block;padding:4px 12px;border-radius:999px;font-weight:600;font-size:13px;margin-right:10px}
+  .verdict.High{background:#e3f4e6;color:#14632a}.verdict.Medium{background:#fdf3d8;color:#7a5200}.verdict.Low,.verdict.None{background:#eceff1;color:#3f4a54}
+  .shot{margin:22px 0}.shot img{width:100%;height:auto;border:1px solid #d9e3e2;border-radius:10px}
+  .cta{display:inline-block;background:#0F766E;color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .card{border:1px solid #d9e3e2;border-radius:10px;padding:14px;background:#fff}
+  .card a{font-weight:600;text-decoration:none;color:#0F766E}
+  .muted{color:#5b6b6a;font-size:13px}
+  table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:6px 8px;border-bottom:1px solid #e6eceb;text-align:left}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a class="brand" href="../index.html">BookScope</a> · <a href="index.html">Niche reports</a></header>
+  
+  <h1>KDP niche reports</h1>
+  <p class="lede">Real numbers for real Amazon searches, measured with BookScope and refreshed monthly. Each report: median revenue per month, average reviews, share of indie titles, ads on the page, niche age, and a verdict with reasons.</p>
+  <div class="grid"><div class="card"><a href="cozy-fantasy-kindle.html">cozy fantasy</a> <span class="muted">· Kindle Store</span><br><span class="verdict Medium">Medium</span> <span class="muted">median $816/mo · September 2026</span></div><div class="card"><a href="cozy-mystery-kindle.html">cozy mystery</a> <span class="muted">· Kindle Store</span><br><span class="verdict Medium">Medium</span> <span class="muted">median $3,498/mo · September 2026</span></div><div class="card"><a href="dinosaur-coloring-book-for-kids-books.html">dinosaur coloring book for kids</a> <span class="muted">· Books</span><br><span class="verdict Low">Low</span> <span class="muted">median $187/mo · September 2026</span></div><div class="card"><a href="enemies-to-lovers-romance-kindle.html">enemies to lovers romance</a> <span class="muted">· Kindle Store</span><br><span class="verdict Medium">Medium</span> <span class="muted">median $2,520/mo · September 2026</span></div><div class="card"><a href="keto-cookbook-for-beginners-books.html">keto cookbook for beginners</a> <span class="muted">· Books</span><br><span class="verdict Low">Low</span> <span class="muted">median $173/mo · September 2026</span></div><div class="card"><a href="small-town-romance-kindle.html">small town romance</a> <span class="muted">· Kindle Store</span><br><span class="verdict Medium">Medium</span> <span class="muted">median $1,921/mo · September 2026</span></div><div class="card"><a href="space-opera-kindle.html">space opera</a> <span class="muted">· Kindle Store</span><br><span class="verdict Medium">Medium</span> <span class="muted">median $2,471/mo · September 2026</span></div><div class="card"><a href="witchy-romance-kindle.html">witchy romance</a> <span class="muted">· Kindle Store</span><br><span class="verdict Low">Low</span> <span class="muted">median $175/mo · September 2026</span></div></div>
+  <p style="margin-top:28px"><a class="cta" href="https://chromewebstore.google.com/detail/hodbjjaohnolmgbickjoiagcphcllcbo">Add BookScope to Chrome — free</a></p>
+  <footer>Estimates come from public Best Sellers Rank data via a published rank-to-sales curve and KDP's published royalty terms; they are indicative, not Amazon sales figures. BookScope is not affiliated with Amazon.</footer>
+</div>
+</body>
+</html>
